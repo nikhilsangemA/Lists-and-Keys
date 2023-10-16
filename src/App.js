@@ -25,11 +25,11 @@ const userDetails = [
 const App = () => (
   <div className="list-container">
     <h1 className="title">User List</h1>
-    <p>
+    <ul>
       {userDetails.map(eachItem => (
         <UserProfile userDetails={eachItem} key={eachItem.uniqueNo} />
       ))}
-    </p>
+    </ul>
   </div>
 )
 
